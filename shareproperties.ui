@@ -1,0 +1,626 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>DialogProperties</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>DialogProperties</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>592</width>
+            <height>450</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>DialogProperties</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout5</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>500</x>
+                <y>30</y>
+                <width>82</width>
+                <height>410</height>
+            </rect>
+        </property>
+        <vbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>buttonOk</cstring>
+                </property>
+                <property name="text">
+                    <string>&amp;OK</string>
+                </property>
+                <property name="accel">
+                    <string>Alt+O</string>
+                </property>
+                <property name="autoDefault">
+                    <bool>true</bool>
+                </property>
+                <property name="default">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>buttonCancel</cstring>
+                </property>
+                <property name="text">
+                    <string>&amp;Cancel</string>
+                </property>
+                <property name="accel">
+                    <string>Alt+C</string>
+                </property>
+                <property name="autoDefault">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <spacer>
+                <property name="name">
+                    <cstring>Spacer1</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Vertical</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>20</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+        </vbox>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBoxOptions</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>160</y>
+                <width>480</width>
+                <height>280</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Export Options</string>
+        </property>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CheckPort1024</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>460</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Allow connections from ports 1024 and higher</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CheckSyncWrite</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>80</y>
+                    <width>460</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Sync write operations on request</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CheckForceSync</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>100</y>
+                    <width>460</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Force sync of write operations immediately</string>
+            </property>
+        </widget>
+        <widget class="Line">
+            <property name="name">
+                <cstring>lineOptions</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>120</y>
+                    <width>460</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>HLine</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CheckRoot</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>140</y>
+                    <width>460</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Treat remote root user as local root</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CheckDisableSubtree</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>60</y>
+                    <width>460</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Disable subtree checking</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>LineEditGID</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>80</x>
+                    <y>250</y>
+                    <width>150</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>LabelSpecifyUID</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>200</y>
+                    <width>61</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>User ID :</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>LabelSpecifyGID</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>250</y>
+                    <width>61</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Group ID :</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CheckFileLock</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>40</y>
+                    <width>460</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Allow insecure file locking</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CheckSpecifyGID</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>230</y>
+                    <width>310</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Specify local group ID for anonymous users</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>ButtonResolvUID</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>330</x>
+                    <y>200</y>
+                    <width>100</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Resolve  UID</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>ButtonResolvGID</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>330</x>
+                    <y>240</y>
+                    <width>100</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Resolve GID</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>LineEditUID</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>80</x>
+                    <y>200</y>
+                    <width>150</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CheckSpecifyUID</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>180</y>
+                    <width>310</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Specify local user ID for anonymous users</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>CheckAnonymous</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>160</y>
+                    <width>460</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Treat all client users as anonymous users</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBoxShare</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>480</width>
+                <height>140</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Share</string>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>LabelHosts</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>60</y>
+                    <width>60</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Hosts :</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>LabelPermissions</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>100</y>
+                    <width>90</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Permissions :</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>LabelDirectory</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>70</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Directory :</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineHosts</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>80</x>
+                    <y>60</y>
+                    <width>380</width>
+                    <height>30</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>radioButtonreadonly</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>120</x>
+                    <y>100</y>
+                    <width>111</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Read Only</string>
+            </property>
+            <property name="checked">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>radioButtonReadWrite</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>260</x>
+                    <y>100</y>
+                    <width>111</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Read Write</string>
+            </property>
+        </widget>
+        <widget class="QToolButton">
+            <property name="name">
+                <cstring>ButtonBrowse</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>370</x>
+                    <y>20</y>
+                    <width>90</width>
+                    <height>32</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&amp;Browse</string>
+            </property>
+            <property name="accel">
+                <string>Alt+B</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineDirectory</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>80</x>
+                    <y>20</y>
+                    <width>270</width>
+                    <height>30</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>ButtonBrowse</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>ButtonBrowse_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>ButtonResolvUID</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>ButtonResolvUID_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>ButtonResolvGID</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>ResolvGID_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>CheckAnonymous</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>CheckAnonymous_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>CheckSpecifyUID</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>CheckSpecifyUID_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>CheckSpecifyGID</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>CheckSpecifyGID_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>radioButtonreadonly</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>radioButtonreadonly_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>radioButtonReadWrite</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>radioButtonReadWrite_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>DialogProperties</receiver>
+        <slot>buttonOk_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">shareproperties.ui.h</include>
+</includes>
+<slots>
+    <slot>ButtonBrowse_clicked()</slot>
+    <slot>ButtonResolvUID_clicked()</slot>
+    <slot>ResolvGID_clicked()</slot>
+    <slot>CheckAnonymous_clicked()</slot>
+    <slot>CheckSpecifyUID_clicked()</slot>
+    <slot>CheckSpecifyGID_clicked()</slot>
+    <slot>radioButtonreadonly_clicked()</slot>
+    <slot>radioButtonReadWrite_clicked()</slot>
+    <slot>buttonOk_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

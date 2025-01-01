@@ -1,0 +1,3 @@
+#!/bin/sh
+kdesu -c "python knfs.py"
+

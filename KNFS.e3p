@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-3.5.dtd">
+<!-- Project file for project KNFS -->
+<!-- Saved: 2005-03-07, 12:15:19 -->
+<!-- Copyright (C) 2005 Julien Morot, julien@momonux.org -->
+<Project version="3.5">
+  <Description>A graphic tool to manage your NFS Server.</Description>
+  <Version>0.1.1</Version>
+  <Author>Julien Morot</Author>
+  <Email>julien@momonux.org</Email>
+  <Sources>
+    <Source>
+      <Name>knfs.py</Name>
+    </Source>
+    <Source>
+      <Name>nfsData.py</Name>
+    </Source>
+    <Source>
+      <Name>mainwindowdesign.py</Name>
+    </Source>
+    <Source>
+      <Name>mainwindow.py</Name>
+    </Source>
+    <Source>
+      <Name>nfsBackend.py</Name>
+    </Source>
+    <Source>
+      <Name>sharepropertiesdesign.py</Name>
+    </Source>
+    <Source>
+      <Name>shareproperties.py</Name>
+    </Source>
+  </Sources>
+  <Forms>
+    <Form>
+      <Name>mainwindow.ui</Name>
+    </Form>
+    <Form>
+      <Name>shareproperties.ui</Name>
+    </Form>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <MainScript>
+    <Name>knfs.py</Name>
+  </MainScript>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+</Project>
