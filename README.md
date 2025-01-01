@@ -6,4 +6,4 @@ PyQt 3
   
 Mainwindow :  
   
-![MainWindow](knfs/mainwindow.png)
+![MainWindow](mainwindow.png)
